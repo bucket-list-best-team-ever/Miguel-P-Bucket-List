@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 100rem;
+  background-color: #bff6f9;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+header nav {
+  font-size: 2.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 2rem;
+}
+header nav a:hover {
+  color: #bff6f9;
+  background-color: #ff914d;
+  border-radius: 10px;
+}
+header img {
+  width: 10rem;
+  height: 10rem;
+}
+.top-content {
+  background-color: #bff6f9;
+}
+.top-content img {
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
