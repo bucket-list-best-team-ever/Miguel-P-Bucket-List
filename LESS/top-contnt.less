@@ -1,10 +1,37 @@
 .top-content {
-    background-color: rgb(191, 246, 249);
+    background-color: #2D2D2A;
+    padding: 1rem 0;
     img {
         display: flex;
         justify-content: center;
         max-width: 80rem;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
+    }
+    .info {
+        max-width: 80rem;
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;;
+        margin: 0 auto 2rem auto; 
+    
+        .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                max-width: 35rem;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-shadow:   5px 5px 50px -5px black; 
+                padding: 0 1rem;
+                background-color: #E5DCC5;
+                font-family: @font;
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
     }
 }
