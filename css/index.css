@@ -98,6 +98,7 @@ html {
 }
 .carousel {
   width: 100%;
+  border: 1px solid #E3E4E6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,9 +182,9 @@ html {
   width: 3rem;
 }
 header {
-  width: 100rem;
-  background-color: #E5DCC5;
-  padding: 1rem 0;
+  max-width: 100rem;
+  width: 100%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -200,27 +201,30 @@ header nav a {
   padding: 0 2rem;
 }
 header nav a:hover {
-  color: #E5DCC5;
+  color: #FFFFFF;
   background-color: #C14953;
   border-radius: 10px;
 }
 header img {
-  width: 10rem;
+  width: 10;
   height: 10rem;
 }
 .top-content {
+  max-width: 100rem;
+  width: 100%;
   background-color: #2D2D2A;
   padding: 1rem 0;
 }
 .top-content img {
   display: flex;
   justify-content: center;
-  max-width: 80rem;
-  width: 100%;
+  max-width: 100rem;
+  width: 80%;
   margin: 0 auto 2rem auto;
 }
 .top-content .info {
   max-width: 80rem;
+  width: 100%;
   height: 20rem;
   display: flex;
   justify-content: space-around;
@@ -244,7 +248,47 @@ header img {
 .top-content .info .card p {
   font-size: 1.3rem;
 }
+@media (max-width: 80rem) {
+  .top-content {
+    max-width: 80rem;
+    width: 100%;
+  }
+  .top-content img {
+    display: flex;
+    justify-content: center;
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto 2rem auto;
+  }
+  .top-content .info {
+    max-width: 60rem;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+  }
+  .top-content .info .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 25rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px -5px black;
+    padding: 0 1rem;
+    background-color: #E5DCC5;
+    font-family: 'Cabin', 'sans-serif';
+  }
+  .top-content .info .card h1 {
+    font-size: 2rem;
+  }
+  .top-content .info .card p {
+    font-size: 1.3rem;
+  }
+}
 .tabs {
+  max-width: 100rem;
   width: 100%;
 }
 .tabs .tabs-items {
@@ -291,11 +335,17 @@ header img {
 .tabs-link-selected {
   z-index: 2;
   border-right: 1px solid #C14953;
-  background-color: #848FA5;
+  background-color: #E3E4E6;
   color: black;
 }
 .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+@media (max-width: 80rem) {
+  .tabs-links {
+    max-width: 80rem;
+    width: 100%;
+  }
 }
 .Btn-holder {
   display: flex;
@@ -322,6 +372,15 @@ footer {
   background-color: #E5DCC5;
   font-family: 'Cabin', 'sans-serif';
   text-align: center;
-  width: 100rem;
+  max-width: 100rem;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 80rem) {
+  footer {
+    max-width: 80rem;
+    width: 100%;
+  }
+  max-width: 80rem;
+  width: 100%;
 }
