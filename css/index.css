@@ -384,3 +384,27 @@ footer {
   max-width: 80rem;
   width: 100%;
 }
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Cabin', 'sans-serif';
+}
+.categories .tab {
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin: 0 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.categories .tab:hover {
+  color: #FFFFFF;
+  background-color: #C14953;
+  border-radius: 10px;
+}
+.categories .active-tab {
+  background-color: #C14953;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
